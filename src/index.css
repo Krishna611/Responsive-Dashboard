@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Card helpers with light/dark mode */
+.card {
+  @apply rounded-2xl bg-white border border-slate-200 shadow-soft dark:bg-surface dark:border-border dark:shadow-card;
+}
+
+.card-soft {
+  @apply rounded-2xl bg-slate-50 border border-slate-200 shadow-soft dark:bg-surface2 dark:border-border dark:shadow-card;
+}
+
+.stat {
+  @apply flex items-center justify-between p-5 rounded-2xl bg-white border border-slate-200 shadow-soft dark:bg-surface dark:border-border dark:shadow-card;
+}
+
+.badge {
+  @apply text-xs px-2 py-0.5 rounded-full border border-slate-300 text-slate-600 dark:border-border dark:text-textSoft;
+}
+
+.table {
+  @apply w-full text-sm;
+}
+
+.table th {
+  @apply text-left text-slate-600 dark:text-textSoft font-medium py-3;
+}
+
+.table td {
+  @apply py-3 border-t border-slate-200 dark:border-border/60;
+}
